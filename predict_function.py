@@ -1,4 +1,7 @@
 
+from sklearn.metrics import r2_score, mean_absolute_error
+
+
 def predict(models, X_train, X_test, y_train, y_test):
     for name, model in models:
         model.fit(X_train, y_train)
